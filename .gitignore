@@ -1,0 +1,29 @@
+# Local build trees, release staging and test rigs
+/build/
+/dist/
+
+# Local VitaSDK bootstrap (vdpm checkout + ~100 MB archive)
+/toolchain/
+
+# Upstream libssh2 source/archive. A cross-compiled libssh2 goes into $VITASDK.
+/third_party/libssh2-1.11.1/
+/third_party/libssh2-1.11.1.tar.gz
+
+# Stray build products
+/*.vpk
+*.pdb
+*.exe
+*.o
+*.obj
+*.log
+*.bad
+
+# Device-side data that must never be committed
+hosts.txt
+secrets.dat
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
